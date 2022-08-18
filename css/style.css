@@ -10,7 +10,7 @@ body {
     --red-color-hover: #cb1d29;
     --bg-color: #f0f4f7;
     --black-color: black;
-    --gray-color:gray;
+    --gray-color: gray;
     --ptag-color: #999999;
     --nav-bar-color: #10151c;
     --bg-gradiant: linear-gradient(129deg, #ff414d 25%, #f03943 25%, #f03943 50%, #ff414d 50%, #ff414d 75%, #f03943 75%, #f03943 100%);
@@ -173,60 +173,66 @@ body {
 
 /* HERO SERCHBAR START */
 
-.ecs-search-bar1{
+.ecs-search-bar1 {
     margin: 15px auto;
     background-color: var(--white-color);
-    height:40px;
-    width:60%;
+    height: 40px;
+    width: 60%;
     border-radius: 5px;
-    
+
 }
-.ecs-search-bar1{
+
+.ecs-search-bar1 {
     display: flex;
     align-items: center;
-    gap:5px;
+    gap: 5px;
     overflow: hidden;
     justify-content: space-between;
 }
-.ecs-search-bar1 span{
+
+.ecs-search-bar1 span {
     color: var(--ptag-color);
-    padding:5px 10px;
-}
-.ecs-search-bar1 .search-box3{
-    border: none;
-    outline:none;
-    font-family: var(--font-nunito);
-}
-.ecs-search-bar1 .search-box4{
-    border: none;
-    outline:none;
-    font-family: var(--font-nunito);
-    
+    padding: 5px 10px;
 }
 
-.ecs-search-bar1 select{
+.ecs-search-bar1 .search-box3 {
     border: none;
-    outline:none;
+    outline: none;
+    font-family: var(--font-nunito);
+}
+
+.ecs-search-bar1 .search-box4 {
+    border: none;
+    outline: none;
+    font-family: var(--font-nunito);
+
+}
+
+.ecs-search-bar1 select {
+    border: none;
+    outline: none;
     color: var(--ptag-color);
     padding: 5px;
     font-family: var(--font-nunito);
 }
-.ecs-search-bar1 select option{
+
+.ecs-search-bar1 select option {
     color: var(--black-color);
 }
-.ecs-search-bar1 button span{
+
+.ecs-search-bar1 button span {
     color: var(--white-color);
 }
 
-.ecs-search-bar1 button{
+.ecs-search-bar1 button {
     background-color: var(--red-button);
-    border:none;
-    padding:50px 25px;
+    border: none;
+    padding: 50px 25px;
     color: var(--white-color);
-    
+
 }
 
-.ecs-search-bar1 button:hover{
+.ecs-search-bar1 button:hover {
     background-color: var(--red-color-hover);
 
 }
@@ -234,48 +240,88 @@ body {
 /* HERO SERCHBAR END  */
 
 /* HERO CARD SECTION START */
-.ecs-card-container{
+.ecs-card-container {
     margin-top: 200px;
     background-color: var(--bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.ecs-card-section{
+
+.ecs-card-section {
     margin-top: -80px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     width: 80%;
-    justify-content:center;
-   
+    justify-content: center;
+
 }
-.ecs-card{
+
+.ecs-card {
     padding: 50px 0;
     background-color: var(--white-color);
     width: 160px;
     border-radius: 5px;
- 
+    text-align: center;
+    transition: 0.8s;
+}
+.ecs-card h3,.ecs-card h5{
+    font-family: var(--font-nunito);
+}
+.ecs-card:hover {
+    transform: scale(1.08);
+    transition: 0.8s;
 }
 
-.ecs-card a{
+.ecs-card-section a {
+    color: var(--red-button);
     text-decoration: none;
-    color: var(--gray-color);
-    text-align: center;
-    font-family: var(--font-nunito);
-    font-size: 20px;
+    transition: 0.3s;
+
 }
-.ecs-text h5{
-    font-size: 12px;
+
+.ecs-card-section a:hover {
+    color: #f0f4f7 !important;
+    background-color: var(--red-color);
+    transition: 0.3s;
 }
-.ecs-card .ecs-tagline{
+
+.ecs-card i {
+    font-size: 60px;
+}
+
+.ecs-card .ecs-tagline {
     background-color: var(--white-color);
     padding: 2px 10px;
     border-radius: 5px;
     color: var(--red-color);
     font-variant: var(--font-nunito);
 }
-.eccs-icon span{
-    font-size: 55px;
-    color: var(--red-color);
+
+/* HERO CARD SECTION END */
+
+/* POPULER LISTING SECTION START */
+
+.ecs-Popular-Listing-section{
+   
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.ecs-listing-heading h3{
+    font-family: var(--font-nunito);
+    padding-top:100px;
+    color: var(--red-button);
+}
+.ecs-listing-heading h2{
+    font-family: var(--font-nunito);
+    padding-top:20px;
+    font-size: 50px;
+    color: var(--gray-color);
+}
+
+.ecs-list-image img{
+    width:150px;
+
 }
